@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="assets/images/Logo.png">
+</head>
+<body>
+    <!--Formulario de registro-->
+    <div id="registerBox">
+        <h2>Registro de usuario</h2>
+
+        <form id="registerForm">
+
+            <div class="formInput">
+                <label for="username">Nombres</label>
+                <input type="text" id="username" name="username" placeholder="Sofía" required>
+            </div>
+
+            <div class="formInput">
+                <label for="surnames">Apellidos</label>
+                <input type="text" id="surnames" name="surnames" placeholder="Vargas Díaz" required>
+            </div>
+
+            <div class="formInput">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required><br>
+            </div>
+
+            <div class="formInput">
+                <label for="password">Nombres</label>
+                <input type="password" id="password" name="password" placeholder="1234" required>
+            </div>
+
+            <div class="gender">
+                <label>Género</label>
+                    <select class="options" name="gender" required>
+                        <option value="">Seleccionar</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+            </div>
+
+            <button type="submit" class="button">Registrarse</button>
+            <p class="redirect"><a href="index.html"></a></p>
+        </form>
+        <p id="registerMessage"></p>
+    </div>
+</body>
+</html>

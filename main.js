@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         document.getElementById('loginMessage').style.color = 'green';
 
         setTimeout(() => {
-            window.location.href = '/CSS/Intermedio/paginaWeb/index.html'; // Redirige a la página de inicio
+            window.location.href = ''; // Redirige a la página principal
         }, 2000);
     } else {
         document.getElementById('loginMessage').innerHTML = 'Correo o contraseña incorrectos.<br>Por favor, intenta nuevamente.';
