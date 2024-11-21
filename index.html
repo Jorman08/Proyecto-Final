@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/images/Logo.png">
 </head>
 <body>
-    
+    <!--Formulario de login-->
+    <div id="loginContainer">
+        <h2>Iniciar sesión</h2>
+        <form class="loginForm">
+            <div class="formInput">
+                <label for="loginEmail">Correo electrónico</label>
+                <input type="text" id="loginEmail" name="loginEmail" placeholder="ejemplo@gmail.com" required><br>
+            </div>
+
+            <div class="formInput">
+                <label for="loginPassword">Contraseña</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="1234" required><br>
+            </div>
+            <button class="button">Iniciar sesión</button>
+        </form>
+        <p class="redirection">¿No tienes una cuenta? <a href="#" class="register">Regístrate</a></p>
+        <p id="loginMessage"></p>
+    </div>
 </body>
 </html>
