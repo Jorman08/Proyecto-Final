@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+/* Icons */
+
+.iconWhatsapp {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #29ad34;
+    border: 1px solid #29ad34;
+    position: fixed;
+    left: .5%;
+    bottom: 1%;
+    z-index: 50;
+}
+
+.arrow {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* Icons End */
+
+
+
+/* Header Section */
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    container-type: inline-size;
+    container-name: header;
+}
+
+.headerOpen-nav-button {
+    color: #c45888;
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    z-index: 20;
+}
+
+.headerOpen-nav-button:hover {
+    opacity: .7;
+}
+
+header .headerCheckbox {
+    display: none;
+}
+
+.navbar {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.navbarList {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.listItem {
+    list-style: none;
+}
+
+.listItem a {
+    color: #c45999;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.listItem a:is(:hover, :active) {
+    text-decoration: underline;
+}
+
+.headerCheckbox:checked ~ .navbar {
+    display: flex;
+}
+
+.logo {
+    max-width: 100%;
+    width: 150px;
+    margin: 10px;
+}
+
+/* Header Queries */
+
+@container header (min-width: 600px) {
+    .navbar {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        background-color: #000;
+    }
+
+    .navbarList {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        gap: 40px;
+        margin-right: 40px;
+        background-color: #000;
+    }
+
+    .headerOpen-nav-button {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+        margin-left: 50px;
+    }
+}
+
+/* Header End */
+
+
+
+/* Overlay Section */
+
+.containerOverlay {
+    container-type: inline-size;
+    container-name: overlay;
+}
+
+.overlayImage {
+    display: flex;
+    background: url(images/overlay.png) top / cover;
+    max-width: 100%;
+    width: 100%;
+    min-height: 50vh;
+    color: #fffc;
+}
+
+.positionBackground {
+    width: 100%;
+    background: #0003;
+    text-align: center;
+    box-shadow: 0 0 10px #fff;
+}
+
+.positionBackground span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 2%;
+    text-shadow: 2px 2px 30px #fff;
+}
+
+/* Overlay Queries */
+
+@container overlay (min-width: 600px) {
+    .overlayImage {
+        min-height: 200vh;
+    }
+
+    .positionBackground p {
+        margin-top: 6%;
+    }
+
+    .positionBackground span {
+        margin: 10%;
+        font-size: 1.8rem;
+    }
+}
+
+/* Overlay End */
