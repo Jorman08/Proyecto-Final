@@ -41,6 +41,13 @@ body {
     font-size: 1.5rem;
 }
 
+/* Icons Queries */
+
+@media (min-width: 600px) {
+    .iconWhatsapp {
+        padding: 10px;
+    }
+}
 /* Icons End */
 
 
@@ -107,7 +114,7 @@ header .headerCheckbox {
 }
 
 .btn-1 {
-    box-shadow: 0 0 10px #c45999;
+    box-shadow: 0 0 8px #c45999;
     border: none;
     overflow: hidden;
 }

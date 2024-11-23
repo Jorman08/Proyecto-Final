@@ -265,11 +265,13 @@ main {
         margin: auto;
         margin-bottom: 10%;
         box-shadow: 0 0 10px #fff;
+        border-radius: 20px;
         padding: 3%;
     }
 
     .title-1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-top: 5%;
     }
 
     .blocks {
@@ -281,6 +283,8 @@ main {
     .secondBlock, .thirdBlock {
         max-width: 50%;
         box-shadow: 0 0 10px #fff;
+        border-radius: 20px;
+        padding: 3%;
     }
 
     /* Programs */
@@ -334,6 +338,10 @@ main {
         gap: 15%;
     }
 
+    .dates {
+        margin-bottom: 3%;
+    }
+
     .eventsContent {
         margin-top: 2%;
         margin-bottom: 0;
@@ -354,10 +362,28 @@ main {
     }
 
     .reviewContent {
-        width: 67rem;
+        width: 90%;
         display: flex;
-        margin-top: 30px;
-        margin-bottom: 10%;
+        margin-top: 10px;
+        margin-bottom: 5%;
+        gap: 2%;
+    }
+
+    .box {
+        padding: 1%;
+    }
+
+    .box p {
+        font-size: 1.2rem;
+    }
+
+    .bxText h4 {
+        font-size: 18px;
+    }
+
+    .bxImg {
+        margin: 3%;
+        margin-left: 0;
     }
 }
 

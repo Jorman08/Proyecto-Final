@@ -112,3 +112,52 @@ body {
 .list-of-purposes {
     margin: 5% 5% 5% 0;
 }
+
+/* Queries */
+@media (min-width: 600px) {
+    /* Slider box */
+    .title {
+        font-size: 30px;
+        margin: 3% 0px;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+    }
+
+    .sliderBox {
+        height: 1200px;
+        margin-bottom: 0;
+    }
+
+    .sliderBox img {
+        height: 70%;
+    }
+
+    /* Prices */
+    .prices {
+        margin-top: 7%;
+        padding-top: 5%;
+    }
+
+    .prices h2 {
+        font-size: 2rem;
+    }
+
+    .monthly-payment {
+        font-size: 20px;
+    }
+
+    /* Purposes */
+    .purposes h2 {
+        font-size: 2rem;
+    }
+
+    .list-of-purposes {
+        font-size: 20px;
+    }
+}
