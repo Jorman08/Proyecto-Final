@@ -261,9 +261,10 @@ main {
     .blocks {
         margin-bottom: 8%;
         display: flex;
+        gap: 8%;
     }
 
-    .secondBlock .thirdBlock {
+    .secondBlock, .thirdBlock {
         max-width: 50%;
         box-shadow: 0 0 10px #fff;
     }
@@ -307,7 +308,7 @@ main {
         padding-top: 4%;
     }
 
-    .eventsCard .eventsDates {
+    .eventsCard, .eventsDates {
         margin-top: 5%;
         margin-bottom: 5%;
         display: flex;
