@@ -40,6 +40,11 @@ footer {
     color: #000;
 }
 
+.footerContact, .footerContact h4, .footerContact p {
+    margin-top: 3%;
+    font-size: 16px;
+}
+
 /* Footer Queries */
 @media (min-width: 600px) {
     .footerContact h4 {
